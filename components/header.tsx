@@ -1,9 +1,18 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/auth-context";
 
 export const Header = () => {
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
   const linkClass =
     "px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-700 hover:text-white transition-colors";
   const activeLinkClass = "bg-slate-900 text-white";
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
 
   return (
     <header className="bg-slate-800 shadow-lg sticky top-0 z-50">
@@ -27,6 +36,15 @@ export const Header = () => {
               </NavLink>
 
               <NavLink
+                to="/courses"
+                className={({ isActive }) =>
+                  `${linkClass} ${isActive ? activeLinkClass : ""}`
+                }
+              >
+                Cursos
+              </NavLink>
+
+              <NavLink
                 to="/simulator"
                 className={({ isActive }) =>
                   `${linkClass} ${isActive ? activeLinkClass : ""}`
@@ -43,6 +61,52 @@ export const Header = () => {
               >
                 Sobre
               </NavLink>
+
+              {user ? (
+                <>
+                  <NavLink
+                    to="/dashboard"
+                    className={({ isActive }) =>
+                      `${linkClass} ${isActive ? activeLinkClass : ""}`
+                    }
+                  >
+                    Dashboard
+                  </NavLink>
+                  <NavLink
+                    to="/profile"
+                    className={({ isActive }) =>
+                      `${linkClass} ${isActive ? activeLinkClass : ""}`
+                    }
+                  >
+                    Perfil
+                  </NavLink>
+                  <button
+                    onClick={handleLogout}
+                    className="px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-red-600 hover:text-white transition-colors"
+                  >
+                    Sair
+                  </button>
+                  <NavLink
+                    to="/profile"
+                    className="text-cyan-400 text-sm font-medium hover:text-cyan-300 transition-colors"
+                  >
+                    {user.name}
+                  </NavLink>
+                </>
+              ) : (
+                <NavLink
+                  to="/login"
+                  className={({ isActive }) =>
+                    `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                      isActive
+                        ? "bg-cyan-500 text-white"
+                        : "bg-cyan-600 text-white hover:bg-cyan-500"
+                    }`
+                  }
+                >
+                  Login
+                </NavLink>
+              )}
             </div>
           </div>
         </div>

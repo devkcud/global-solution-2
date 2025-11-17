@@ -5,6 +5,7 @@ const SkillContext = createContext<SkillContextType | undefined>(undefined);
 
 export const SkillProvider = ({ children }) => {
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
+  const [recommendedCourses, setRecommendedCoursesState] = useState<string[]>([]);
 
   const toggleSkill = useCallback((skillId: string) => {
     setSelectedSkills((prev) =>
@@ -14,9 +15,21 @@ export const SkillProvider = ({ children }) => {
     );
   }, []);
 
+  const setRecommendedCourses = useCallback((courseIds: string[]) => {
+    setRecommendedCoursesState(courseIds);
+    // Store in localStorage for persistence across login
+    localStorage.setItem("recommendedCourses", JSON.stringify(courseIds));
+  }, []);
+
   return (
     <SkillContext.Provider
-      value={{ selectedSkills, setSelectedSkills, toggleSkill }}
+      value={{
+        selectedSkills,
+        setSelectedSkills,
+        toggleSkill,
+        recommendedCourses,
+        setRecommendedCourses,
+      }}
     >
       {children}
     </SkillContext.Provider>
