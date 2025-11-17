@@ -211,6 +211,13 @@ export const CourseDetailPage = () => {
                   {averageRating} ({course.reviews.length} avaliações)
                 </p>
               </div>
+              <div>
+                <p className="text-slate-500 text-sm">Alunos Matriculados</p>
+                <p className="text-white font-medium flex items-center gap-2">
+                  <span className="text-green-400">👥</span>
+                  {course.enrolledCount.toLocaleString('pt-BR')}
+                </p>
+              </div>
             </div>
 
             <div className="mb-6">

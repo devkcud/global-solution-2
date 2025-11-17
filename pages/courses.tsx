@@ -170,6 +170,12 @@ export const CoursesPage = () => {
                     <span className="text-slate-500 mr-2">Duração:</span>
                     {course.duration}
                   </div>
+                  <div className="flex items-center text-sm text-slate-300">
+                    <span className="text-slate-500 mr-2">Alunos:</span>
+                    <span className="text-green-400 font-medium">
+                      {course.enrolledCount.toLocaleString('pt-BR')} matriculados
+                    </span>
+                  </div>
                 </div>
 
                 <div className="mb-4">

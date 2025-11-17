@@ -242,7 +242,8 @@ export const courses: Course[] = [
         { id: 'ml_hp_2', title: '3Blue1Brown: Neural Networks', description: 'Visualizações incríveis que me ajudaram a entender backpropagation', url: 'https://example.com/3b1b-nn', type: 'video', author: 'Grant Sanderson' },
         { id: 'ml_hp_3', title: 'Kaggle Learn', description: 'Plataforma prática onde você pode competir e aprender com datasets reais', url: 'https://example.com/kaggle-learn', type: 'tool', author: 'Kaggle' }
       ]
-    }
+    },
+    enrolledCount: 1247
   },
   {
     id: 'course_ethical_ai',
@@ -295,7 +296,8 @@ export const courses: Course[] = [
         { id: 'eth_hp_2', title: 'Coded Bias Documentary', description: 'Documentário impactante sobre viés facial - sempre recomendo aos alunos', url: 'https://example.com/coded-bias', type: 'video', author: 'Shalini Kantayya' },
         { id: 'eth_hp_3', title: 'Montreal AI Ethics Institute', description: 'Newsletter semanal que acompanho para me manter atualizada', url: 'https://example.com/montreal-ai', type: 'article', author: 'MAIEI Team' }
       ]
-    }
+    },
+    enrolledCount: 892
   },
   {
     id: 'course_cloud_architecture',
@@ -357,7 +359,8 @@ export const courses: Course[] = [
         { id: 'cloud_hp_2', title: 'AWS re:Invent Videos', description: 'Apresentações técnicas que assisto anualmente para novidades', url: 'https://example.com/reinvent', type: 'video', author: 'AWS' },
         { id: 'cloud_hp_3', title: 'Terraform Registry', description: 'Ferramenta essencial para IaC que uso em todos os projetos', url: 'https://example.com/terraform', type: 'tool', author: 'HashiCorp' }
       ]
-    }
+    },
+    enrolledCount: 2156
   },
   {
     id: 'course_leadership',
@@ -410,7 +413,8 @@ export const courses: Course[] = [
         { id: 'lead_hp_2', title: 'TED: How Great Leaders Inspire Action', description: 'Palestra clássica sobre o "porquê" da liderança', url: 'https://example.com/ted-sinek', type: 'video', author: 'Simon Sinek' },
         { id: 'lead_hp_3', title: '15Five', description: 'Ferramenta de feedback contínuo que implemento em consultorias', url: 'https://example.com/15five', type: 'tool', author: '15Five Inc' }
       ]
-    }
+    },
+    enrolledCount: 1589
   },
   {
     id: 'course_ux_design',
@@ -463,7 +467,8 @@ export const courses: Course[] = [
         { id: 'ux_hp_2', title: 'Figma Community', description: 'Onde busco inspiração e templates para acelerar projetos', url: 'https://example.com/figma-community', type: 'tool', author: 'Figma' },
         { id: 'ux_hp_3', title: 'The Design of Everyday Things', description: 'Livro fundamental que moldou minha filosofia de design', url: 'https://example.com/design-everyday', type: 'book', author: 'Don Norman' }
       ]
-    }
+    },
+    enrolledCount: 1834
   },
   {
     id: 'course_blockchain',
@@ -516,7 +521,8 @@ export const courses: Course[] = [
         { id: 'block_hp_2', title: 'Patrick Collins YouTube', description: 'Tutoriais práticos excelentes que recomendo aos iniciantes', url: 'https://example.com/patrick-collins', type: 'video', author: 'Patrick Collins' },
         { id: 'block_hp_3', title: 'Hardhat', description: 'Framework que uso em todos os meus projetos profissionais', url: 'https://example.com/hardhat', type: 'tool', author: 'Nomic Foundation' }
       ]
-    }
+    },
+    enrolledCount: 673
   },
   {
     id: 'course_data_storytelling',
@@ -569,7 +575,8 @@ export const courses: Course[] = [
         { id: 'story_hp_2', title: 'Flourish Studio', description: 'Ferramenta que uso para criar visualizações interativas rapidamente', url: 'https://example.com/flourish', type: 'tool', author: 'Flourish' },
         { id: 'story_hp_3', title: 'Data Viz Project', description: 'Catálogo que consulto para escolher o tipo certo de gráfico', url: 'https://example.com/dataviz-project', type: 'article', author: 'Ferdio' }
       ]
-    }
+    },
+    enrolledCount: 1123
   },
   {
     id: 'course_agile',
@@ -622,7 +629,8 @@ export const courses: Course[] = [
         { id: 'agile_hp_2', title: 'Mountain Goat Software Blog', description: 'Blog que acompanho há anos para dicas práticas de Scrum', url: 'https://example.com/mountain-goat', type: 'article', author: 'Mike Cohn' },
         { id: 'agile_hp_3', title: 'Miro', description: 'Ferramenta colaborativa que uso em todas as retrospectivas', url: 'https://example.com/miro', type: 'tool', author: 'Miro' }
       ]
-    }
+    },
+    enrolledCount: 2341
   }
 ];
 

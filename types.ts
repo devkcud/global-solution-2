@@ -91,6 +91,7 @@ export interface Course {
   reviews: Review[];
   quiz: QuizQuestion[];
   resources: CourseResources;
+  enrolledCount: number;
 }
 
 export interface CourseProgress {
