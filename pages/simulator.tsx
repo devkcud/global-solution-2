@@ -101,7 +101,7 @@ export const SimulatorPage: React.FC = () => {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Recommended Skills Section */}
         {recommendedSkills.length > 0 && (
           <div className="mb-12 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 border border-purple-500/30 rounded-2xl p-6 animate-fade-in">
