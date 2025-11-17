@@ -24,7 +24,7 @@ export const AboutPage: React.FC = () => {
           </h1>
 
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Mais do que uma ferramenta de simulação — um convite à reflexão sobre nosso lugar
+            Mais do que uma ferramenta de simulação; um convite à reflexão sobre nosso lugar
             em um futuro do trabalho em constante evolução.
           </p>
         </div>
