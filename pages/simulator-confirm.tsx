@@ -190,7 +190,7 @@ export const SimulatorConfirmPage: React.FC = () => {
 
       {/* Stats Summary */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-slate-800/50 rounded-lg p-6 text-center border border-slate-700">
+        <div className="bg-slate-800/50 rounded-lg p-6 text-center border border-slate-700 pt-4">
           <div className="text-3xl font-bold text-green-400">
             {groupedSelectedSkills.human.length}
           </div>
